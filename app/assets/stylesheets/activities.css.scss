@@ -1,0 +1,39 @@
+ul {
+  text-align: center;
+}
+
+.home {
+  text-align: center;
+}
+
+.home strong {
+  padding-top: 20px;
+}
+
+.top {
+  margin-top: 20px;
+}
+
+.home-title {
+  color: #7A0000;
+}
+
+ul.home {
+  list-style: none;
+}
+
+.links li:hover {
+  background-color: #1E88C9;
+}
+
+ul.home li {
+  background-color: #777;
+  border-radius: 10px;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  display: inline-block;
+  padding: 5px;
+}
+

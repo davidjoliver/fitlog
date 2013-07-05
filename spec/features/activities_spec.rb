@@ -4,7 +4,7 @@ describe ActivitiesController do
   context "the entry point" do
     it "asks David to pick a type of activity" do
       visit activities_path
-      page.should have_content "What activity are we logging?"
+      page.find(".home-title").text.should == "What activity are we logging?"
     end
 
     it "shows the resistence training option" do
@@ -43,13 +43,13 @@ describe ActivitiesController do
     example "the running option" do
       visit activities_path
       click_link "Running"
-      current_path.should == new_running_activity_path
+      current_path.should == new_run_path
     end
 
     example "the cycling option" do
       visit activities_path
       click_link "Cycling"
-      current_path.should == new_cycling_activity_path
+      current_path.should == new_cycle_ride_path
     end
 
     example "the meal option" do

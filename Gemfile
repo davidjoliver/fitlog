@@ -19,6 +19,7 @@ gem 'unicorn'
 gem 'capistrano', group: :development
 gem 'thin', group: :development
 gem 'turbolinks'
+gem 'mongoid', github: 'mongoid/mongoid'
 
 group :development, :test do
   gem 'rspec-rails'
