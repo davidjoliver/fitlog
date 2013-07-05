@@ -19,7 +19,7 @@ development:
   encoding: unicode
   database: fitlog_development
   pool: 5
-  username: fitlog
+  username: postgres
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -48,7 +48,7 @@ test:
   encoding: unicode
   database: fitlog_test
   pool: 5
-  username: fitlog
+  username: postgres
   password:
 
 production:
