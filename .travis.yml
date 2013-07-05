@@ -6,3 +6,5 @@ rvm:
 # script: bundle exec rspec spec
 before_script:
   - psql -c 'create database fitlog_test;' -U postgres
+services:
+  - mongodb
