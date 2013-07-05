@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.0.0'
-gem 'pg'
 gem 'haml'
 gem 'sass-rails', '~> 4.0.0'
 gem "bootstrap-sass", "~> 2.2.1.1"
@@ -20,6 +19,7 @@ gem 'capistrano', group: :development
 gem 'thin', group: :development
 gem 'turbolinks'
 gem 'mongoid', github: 'mongoid/mongoid'
+gem "database_cleaner", '1.0.0.RC1'
 
 group :development, :test do
   gem 'rspec-rails'

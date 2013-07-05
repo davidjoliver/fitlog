@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Fitlog::Application.config.secret_key_base = '01a048b0b8ceac888b1aa69fc54579287860f24b6c1d91cd497b215edf6abb3172bd0c434a3343bcd0b96f379fb5d8119ef102b6c1aed7463f427397b77c39a3'
+Fitlog::Application.config.secret_key_base = '0d8bb8839c34def6fa552ddcff3ea3a949a062c66c08c8f5adf9163b2c0b13e1e16ff7c00430709bdbc0e489e51c0379d68a51180150a3e296d0f0adc7ba8f2e'

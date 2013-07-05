@@ -62,6 +62,7 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     daemons (1.1.9)
+    database_cleaner (1.0.0.RC1)
     devise (1.5.4)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.0.3)
@@ -114,7 +115,6 @@ GEM
       mini_portile (~> 0.5.0)
     origin (1.1.0)
     orm_adapter (0.0.7)
-    pg (0.15.1)
     polyglot (0.3.3)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
@@ -215,6 +215,7 @@ DEPENDENCIES
   capistrano
   capybara
   coffee-rails (~> 4.0.0)
+  database_cleaner (= 1.0.0.RC1)
   devise
   factory_girl_rails
   haml
@@ -223,7 +224,6 @@ DEPENDENCIES
   jquery-ui-rails
   mongoid!
   nested_form
-  pg
   pry
   pry-rails
   quiet_assets

@@ -1,4 +1,8 @@
 class RunsController < ApplicationController
+  def index
+    @runs = Run.all
+  end
+
   def new
     @run = Run.new
     @run.distance = Distance.new

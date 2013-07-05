@@ -22,7 +22,7 @@ class Distance
   end
 
   def nickname
-    if unit == "miles"
+    if unit.include? "mile"
       return "#{pretty_value} miler"
     end
   end
