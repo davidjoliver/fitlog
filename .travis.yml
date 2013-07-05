@@ -4,3 +4,5 @@ rvm:
   - "2.0.0"
 # uncomment this line if your project needs to run something other than `rake`:
 # script: bundle exec rspec spec
+before_script:
+  - psql -c 'create database fitlog_test;' -U postgres
