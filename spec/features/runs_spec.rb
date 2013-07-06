@@ -30,6 +30,13 @@ describe RunsController do
       page.find(".alert").text.should == "8 miler logged! You did it in 56:30!"
     end
 
+    example "assume miles" do
+      visit new_run_path
+      fill_in "Distance", with: "7"
+      click_button "Log run!"
+      page.find(".alert").text.should == "7 miler logged!"
+    end
+
     example "by distance" do
       visit root_path
       click_link "Running"

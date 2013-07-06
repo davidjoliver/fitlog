@@ -19,6 +19,11 @@ describe Distance do
     end
   end
 
+  it "assumes miles" do
+    distance = Distance.new(value: "7")
+    distance.unit.should == "miles"
+  end
+
   it "tries to simplify the value" do
     distance = Distance.new(value: 10.0)
     distance.pretty_value.should == 10
