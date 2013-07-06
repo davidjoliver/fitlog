@@ -8,15 +8,14 @@
   = csrf_meta_tags
 %body
   .row.top
-  .row
     .span4
     .span8
       .home
         %em
           %strong
             Fitlog
-        = render "layouts/alert"
   .row
     .span4
     .span8
+      = render "layouts/alert"
       = yield

@@ -4,7 +4,7 @@ describe ActivitiesController do
   context "the entry point" do
     it "asks David to pick a type of activity" do
       visit activities_path
-      page.find(".home-title").text.should == "What activity are we logging?"
+      page.find(".home-title").text.should == "What activity are we logging today?"
     end
 
     it "shows the resistence training option" do

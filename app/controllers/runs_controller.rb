@@ -11,7 +11,7 @@ class RunsController < ApplicationController
   def create
     @run = Run.create(run_params)
     if @run.valid?
-      redirect_to activities_path, notice: "#{@run.distance.nickname} logged!"
+      redirect_to activities_path, notice: notice
     else
       render action: :new
     end
@@ -20,6 +20,14 @@ class RunsController < ApplicationController
   private
 
   def run_params
-    params.require(:run).permit(distance_attributes: [:value])
+    params.require(:run).permit(:duration, distance_attributes: [:value])
+  end
+
+  def notice
+    if @run.duration.present?
+      "#{@run.distance.nickname} logged! You did it in #{@run.duration}!"
+    else
+      "#{@run.distance.nickname} logged!"
+    end
   end
 end

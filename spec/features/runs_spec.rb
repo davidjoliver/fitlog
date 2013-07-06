@@ -22,6 +22,14 @@ describe RunsController do
   end
 
   describe "logging a run" do
+    example "with time" do
+      visit new_run_path
+      fill_in "Distance", with: "8 miles"
+      fill_in "Time", with: "56:30"
+      click_button "Log run!"
+      page.find(".alert").text.should == "8 miler logged! You did it in 56:30!"
+    end
+
     example "by distance" do
       visit root_path
       click_link "Running"

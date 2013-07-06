@@ -6,14 +6,6 @@ ul {
   text-align: center;
 }
 
-.home strong {
-  padding-top: 20px;
-}
-
-.top {
-  margin-top: 20px;
-}
-
 .home-title {
   color: #7A0000;
 }
@@ -22,18 +14,31 @@ ul.home {
   list-style: none;
 }
 
-.links li:hover {
+.links li a:hover {
   background-color: #1E88C9;
 }
 
-ul.home li {
-  background-color: #777;
-  border-radius: 10px;
-  a {
-    color: #fff;
-    text-decoration: none;
-  }
+.links li {
   display: inline-block;
-  padding: 5px;
+  margin: 3px;
 }
 
+.links li a {
+  background-color: #429334;
+  border-radius: 7px;
+  color: #fff;
+  padding: 7px;
+  text-decoration: none;
+}
+
+.links li a.undecorated {
+  color: #888;
+  background-color: #D6F7CF;
+  border-radius: 0 0 5px 5px;
+  display: block;
+  font-size: 12px;
+  margin: auto;
+  padding: 4px 2px 2px 2px;
+  width: 85%;
+  text-align: center;
+}

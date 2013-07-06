@@ -1,4 +1,5 @@
 = simple_form_for @run do |f|
   = f.simple_fields_for :distance do |d|
     = d.input :value, label: "Distance"
+  = f.input :duration, label: "Time"
   = f.submit "Log run!"
