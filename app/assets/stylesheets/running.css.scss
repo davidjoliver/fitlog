@@ -1,0 +1,16 @@
+table.run-log {
+  color: $lightLink;
+  background-color: $grayLight;
+  margin-top: 25px;
+  a {
+    color: $lightLink;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  td.tail {
+    background-color: $ui-greenDark;
+  }
+  th {
+    background-color: $ui-redDark;
+  }
+}

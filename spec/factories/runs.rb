@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :run do
-    distance { Factory.build(:distance)}
+    distance { FactoryGirl.build(:distance)}
   end
 
   factory :distance do

@@ -11,7 +11,7 @@ class RunsController < ApplicationController
   def create
     @run = Run.create(run_params)
     if @run.valid?
-      redirect_to activities_path, notice: notice
+      redirect_to runs_path, notice: notice
     else
       render action: :new
     end

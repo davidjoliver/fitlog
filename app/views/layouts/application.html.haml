@@ -6,16 +6,16 @@
   = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
   = javascript_include_tag "application", "data-turbolinks-track" => true
   = csrf_meta_tags
-%body
-  .row.top
-    .span4
-    .span8
-      .home
-        %em
-          %strong
-            Fitlog
-  .row
-    .span4
-    .span8
-      = render "layouts/alert"
-      = yield
+  %body
+    .row.top
+      .span4
+      .span8
+        .home
+          %em
+            %strong
+              = link_to "Fitlog", root_path
+    .row
+      .span4
+      .span8
+        = render "layouts/alert"
+        = yield

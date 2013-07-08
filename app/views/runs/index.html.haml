@@ -1,3 +1,21 @@
-- @runs.each do |run|
-  = link_to run.distance.nickname, "#"
+%h3
+  My runs
+%table.table.table-condensed.run-log
+  %thead
+    %th
+      Distance
+    %th
+      Time
+    %th
+      When?
+  %tbody
+  - @runs.each do |run|
+    %tr
+      %td
+        = link_to run.distance.nickname, "#"
+      %td.tail
+        = run.duration
+      %td.tail
+        = run.ran_at.strftime("%a, %e %b, %Y at %l:%M") unless run.ran_at.nil?
+
 
